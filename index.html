@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/common.css">
+	<script data-main="js/pages/index" src="js/require.js"></script>
+</head>
+<body>
+	
+	<div id="app">
+		<headercom v-if="headerShow"></headercom>
+		<navleft></navleft>
+		<!--<router-link :to="{name: 'detail', params: {userId:'detailPage',color:'red'}}">详情页面</router-link>
+		<router-link :to="{name:'news'}">新闻页面</router-link>-->
+		<div class="contain">
+			<keep-alive>
+				<router-view></router-view>
+			</keep-alive>
+		</div>
+		
+	</div>
+	
+	
+</body>
+</html>
